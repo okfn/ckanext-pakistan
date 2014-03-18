@@ -27,6 +27,5 @@ setup(
         [ckan.plugins]
         # Add plugins here
     pakistan_theme=ckanext.pakistan.plugin:PakistanCustomizations
-    dashboard_preview=ckanext.pakistan.plugin:DashboardView
         """,
 )
