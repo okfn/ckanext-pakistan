@@ -890,10 +890,10 @@ div.notes {
   z-index: -1;
   border: solid 1px #DDDDDD;
 }
-.dashboard-view-edit .dashboard-grid .box:hover:before {
+.in-preview .dashboard-grid .box:hover:before {
   border: solid 5px #fbba19;
 }
-.dashboard-view-edit .dashboard-grid .box:hover {
+.in-preview .dashboard-grid .box:hover {
   -webkit-box-shadow: 0 0 0 5px #ffffff;
   -moz-box-shadow: 0 0 0 5px #ffffff;
   box-shadow: 0 0 0 5px #ffffff;
