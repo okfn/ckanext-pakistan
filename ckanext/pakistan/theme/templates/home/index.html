@@ -41,7 +41,6 @@
            <li class="span4">
               <span class="post">
                 <a class="blog-title" href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{{ post.title or post.name }}</a>
-                <a class="image" href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}" style="background-image:url({{ post.image or 'http://placehold.it/290x185' }})"></a>
                 <small class="date"> {{ h.render_datetime(post.publish_date) }} </small>
                 <span class="text">{{ h.markdown_extract(post.content) }}</span>
                 <a class="btn btn-primary" href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}"><i class="icon-chevron-right"></i>{% trans %}More{% endtrans %}</a>
