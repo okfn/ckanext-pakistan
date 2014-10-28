@@ -54,7 +54,7 @@
         </tr>
       {% endfor %}
     {% endif %}
-    {% if status.task_info.error.response %}
+    {% if status.task_info and status.task_info.error.response %}
     <tr class="toggle-more">
       <th>{{ _('Error Raw Response') }}</th>
       <td>{{ status.task_info.error.response }}</td>
