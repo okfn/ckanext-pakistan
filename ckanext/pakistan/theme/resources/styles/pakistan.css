@@ -763,7 +763,7 @@ a.tag:hover {
   bottom: 0;
   content: "";
   display: block;
-  left: 50%;
+  left: 75%;
   margin-left: -154px;
   position: absolute;
   top: 0;
@@ -771,6 +771,7 @@ a.tag:hover {
   border-left: solid 1px #cccccc;
   border-right: solid 1px #cccccc;
   z-index: -1;
+  min-height: 200px;
 }
 @media screen and (min-height: 768px) {
   .homepage .hero {

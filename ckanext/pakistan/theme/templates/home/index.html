@@ -34,20 +34,32 @@
          </div>
       {% endfor %}
     </div>
-    <h2>{% trans %}Latest News{% endtrans %}</h2>
-    {% set posts = h.get_recent_blog_posts(3) %}
-    <ul class="latest-posts thumbnails">
-        {% for post in posts %}
-           <li class="span4">
-              <span class="post">
-                <a class="blog-title" href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{{ post.title or post.name }}</a>
-                <small class="date"> {{ h.render_datetime(post.publish_date) }} </small>
-                <span class="text">{{ h.markdown_extract(post.content) }}</span>
-                <a class="btn btn-primary" href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}"><i class="icon-chevron-right"></i>{% trans %}More{% endtrans %}</a>
-              </span>        
-           </li>
-        {% endfor %}
-    </ul>
+    <div class="row">
+      <div class="span8">
+        <h2>{% trans %}Latest News{% endtrans %}</h2>
+        {% set posts = h.get_recent_blog_posts(2) %}
+        <ul class="latest-posts thumbnails">
+            {% for post in posts %}
+               <li class="span4">
+                  <span class="post">
+                    <a class="blog-title" href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{{ post.title or post.name }}</a>
+                    <small class="date"> {{ h.render_datetime(post.publish_date) }} </small>
+                    <span class="text">{{ h.markdown_extract(post.content) }}</span>
+                    <a class="btn btn-primary" href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}"><i class="icon-chevron-right"></i>{% trans %}More{% endtrans %}</a>
+                  </span>
+               </li>
+            {% endfor %}
+        </ul>
+      </div>
+      <div class="span4">
+        <h2>{% trans %}Twitter{% endtrans %}</h2>
+<div class="homepage-twitter">
+  <a class="twitter-timeline" height="200" data-dnt="true" href="https://twitter.com/pdeu_test"  data-widget-id="405369948513390592">Tweets by @pdeu_test</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <!-- put a 400 height twitter widget here (light theme) -->
+</div>
+      </div>
+    </div>
 
   </div>
 </div>
