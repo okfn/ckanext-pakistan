@@ -670,9 +670,26 @@ a.tag:hover {
 /* Homepage
    ====================================================== */
 .homepage .hero {
+  background-color: #000000;
+}
+.homepage .bannerimage {
   background-image: url(../img/home-banner.jpg);
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.homepage .background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 49.5%;
+  background-color: #fbb91a;
 }
 .homepage .hero .page-heading {
   margin: 0;

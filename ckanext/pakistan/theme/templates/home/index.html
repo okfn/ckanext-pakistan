@@ -12,53 +12,55 @@
       {{ self.flash() }}
     </div>
     {% block primary_content %}
-      <div role="main" class="hero">
-  <div class="container">
-    <div class="row row1">
-      <div class="span7">
+    <div role="main" class="hero">
+      <div class="background"></div>
+      <div class="bannerimage"></div>
+      <div class="container">
+        <div class="row row1">
+          <div class="span7">
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<div role="main">
-  <div class="container">
-    <h2>{% trans %}Explore by{% endtrans %}</h2>
-    <div class="row">
-      {% for homepage_page in  h.get_homepage_icons()  %}
-         <div class="span3">
-             <a class="category-link" href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='pages_show', page='/'+homepage_page.name) }}"><i class="{{ homepage_page.icon }}"></i>{{homepage_page.category}}</a>
-         </div>
-      {% endfor %}
-    </div>
-    <div class="row">
-      <div class="span8">
-        <h2>{% trans %}Latest News{% endtrans %}</h2>
-        {% set posts = h.get_recent_blog_posts(2) %}
-        <ul class="latest-posts thumbnails">
-            {% for post in posts %}
-               <li class="span4">
-                  <span class="post">
-                    <a class="blog-title" href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{{ post.title or post.name }}</a>
-                    <small class="date"> {{ h.render_datetime(post.publish_date) }} </small>
-                    <span class="text">{{ h.markdown_extract(post.content) }}</span>
-                    <a class="btn btn-primary" href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}"><i class="icon-chevron-right"></i>{% trans %}More{% endtrans %}</a>
-                  </span>
-               </li>
-            {% endfor %}
-        </ul>
-      </div>
-      <div class="span4">
-        <h2>{% trans %}PDP on Twitter{% endtrans %}</h2>
-<div class="homepage-twitter">
-  <a class="twitter-timeline" height="200" href="https://twitter.com/pkdata" data-widget-id="541913449933332481">Tweets by @pkdata</a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-  <!-- put a 400 height twitter widget here (light theme) -->
-</div>
-      </div>
-    </div>
+    <div role="main">
+      <div class="container">
+        <h2>{% trans %}Explore by{% endtrans %}</h2>
+        <div class="row">
+          {% for homepage_page in  h.get_homepage_icons()  %}
+          <div class="span3">
+            <a class="category-link" href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='pages_show', page='/'+homepage_page.name) }}"><i class="{{ homepage_page.icon }}"></i>{{homepage_page.category}}</a>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="row">
+          <div class="span8">
+            <h2>{% trans %}Latest News{% endtrans %}</h2>
+            {% set posts = h.get_recent_blog_posts(2) %}
+            <ul class="latest-posts thumbnails">
+              {% for post in posts %}
+              <li class="span4">
+              <span class="post">
+                <a class="blog-title" href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{{ post.title or post.name }}</a>
+                <small class="date"> {{ h.render_datetime(post.publish_date) }} </small>
+                <span class="text">{{ h.markdown_extract(post.content) }}</span>
+                <a class="btn btn-primary" href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}"><i class="icon-chevron-right"></i>{% trans %}More{% endtrans %}</a>
+              </span>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="span4">
+            <h2>{% trans %}PDP on Twitter{% endtrans %}</h2>
+            <div class="homepage-twitter">
+              <a class="twitter-timeline" height="200" href="https://twitter.com/pkdata" data-widget-id="541913449933332481">Tweets by @pkdata</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              <!-- put a 400 height twitter widget here (light theme) -->
+            </div>
+          </div>
+        </div>
 
-  </div>
-</div>
+      </div>
+    </div>
 
     {% endblock %}
   </div>
