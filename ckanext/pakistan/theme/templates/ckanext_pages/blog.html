@@ -13,3 +13,8 @@
   {{ h.disqus_comments() }}
 
 {% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  {% resource 'pakistan-theme/scripts/all_links_in_new_tabs.js' %}
+{% endblock %}

@@ -1,3 +1,3 @@
 "use strict";
 
-$(':not(a[href$="#"])').attr("target", "_blank");
+$('.module-content :not(a[href$="#"])').attr("target", "_blank");
