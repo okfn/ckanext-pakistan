@@ -676,7 +676,7 @@ a.tag:hover {
   min-height: 350px;
 }
 .homepage .bannerimage {
-  background-image: url(../img/home-banner.jpg);
+  background-image: url(../img/home-banner.png);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -795,7 +795,7 @@ a.tag:hover {
 }
 @media screen and (min-height: 768px) {
   .homepage .hero {
-    min-height: 410px;
+    min-height: 300px;
   }
   .homepage .hero .container .row1 {
     position: absolute;
