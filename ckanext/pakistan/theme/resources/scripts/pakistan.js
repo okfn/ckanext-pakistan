@@ -8,3 +8,26 @@ $(document).ready(function () {
 		$(this).html(text.join(' '));
 	});
 });
+
+$(document).ready(function () {
+    $('#facebook-count').each(function(){
+        var currentdiv = $(this);
+        var url = currentdiv.attr('rel');
+        $.getJSON('http://graph.facebook.com/?id='+url+'&callback=?', function(data) {
+           currentdiv.text((data.shares || 0));
+        });
+    });
+    $('#twitter-count').each(function(){
+        var currentdiv = $(this);
+        var url = currentdiv.attr('rel');
+        $.getJSON('http://cdn.api.twitter.com/1/urls/count.json?url='+url+'&callback=?', function(data) {
+           currentdiv.text((data.count || 0));
+        });
+    });
+    $('#gplus-count').each(function(){
+        var currentdiv = $(this);
+        var url = currentdiv.attr('rel');
+        var count = $('#aggregateCount');
+        console.log(count);
+    });
+});

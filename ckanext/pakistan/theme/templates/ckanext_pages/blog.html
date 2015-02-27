@@ -1,17 +1,7 @@
 {% ckan_extends %}
 
 {% set current_url = h.full_current_url() %}
-
-{% block primary_content %}
-  {{ super() }}
-  <div class="social">
-    <a href="https://www.facebook.com/sharer.php?u={{ current_url }}" target="_blank"><img src="/facebook.png"</a>
-    <a href="https://twitter.com/share?url={{ current_url }}" target="_blank"><img src="/twitter.png"</a>
-    <a href="https://plus.google.com/share?url={{ current_url }}" target="_blank"><img src="/google.png"</a>
-  </div>
-
   {{ h.disqus_comments() }}
-
 {% endblock %}
 
 {% block scripts %}
