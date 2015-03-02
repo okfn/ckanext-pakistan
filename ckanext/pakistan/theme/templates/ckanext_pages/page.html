@@ -3,6 +3,7 @@
 {% set current_url = h.full_current_url() %}
 
 {% block primary_content %}
+  {{ super() }}
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <g:plusone></g:plusone>
 
