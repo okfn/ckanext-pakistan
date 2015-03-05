@@ -1,11 +1,17 @@
 {% set current_url = h.full_current_url() %}
 
 <div class="container">
-  <div class="social">
-    <a class="twitter-share-button" href="https://twitter.com/share"> Tweet </a>
-
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <g:plusone></g:plusone>
+  <div class="social-row">
+    <div class="social social-facebook">
+      <div id="fb-root"></div>
+      <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
+    </div>
+    <div class="social social-twitter">
+      <a class="twitter-share-button" href="https://twitter.com/share"> Tweet </a>
+    </div>
+    <div class="social">
+      <div class="g-plusone" data-size="medium"></div>
+    </div>
   </div>
 </div>
 <footer class="site-footer">
