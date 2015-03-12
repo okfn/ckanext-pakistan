@@ -2,18 +2,20 @@
 
 {% set current_url = h.full_current_url() %}
 {% block primary_content %}
-  <section class="module-content">
-  <div class="toolbar">
-    <ol class="breadcrumb">
-      <li class="active">
-      <a href="/">
-        <span>Home</span>
-      </a>
-      </li>
-    </ol>
-  </div>
   {{ super() }}
   {{ h.disqus_comments() }}
+{% endblock %}
+
+{% block toolbar %}
+<div class="toolbar">
+  <ol class="breadcrumb">
+    <li class="active">
+    <a href="/">
+      <span>Home</span>
+    </a>
+    </li>
+  </ol>
+</div>
 {% endblock %}
 
 {% block scripts %}
