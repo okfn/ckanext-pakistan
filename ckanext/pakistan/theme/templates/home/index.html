@@ -14,15 +14,6 @@
     {% block primary_content %}
     <div role="main">
       <div class="container">
-        <div class="toolbar">
-          <ol class="breadcrumb">
-            <li class="active">
-            <a href="/">
-              <span>Home</span>
-            </a>
-            </li>
-          </ol>
-        </div>
         <h2>{% trans %}Explore by{% endtrans %}</h2>
         <div class="row">
           {% for homepage_page in  h.get_homepage_icons()  %}
