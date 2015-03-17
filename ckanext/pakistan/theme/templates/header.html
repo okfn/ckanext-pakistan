@@ -5,7 +5,12 @@
 {% endblock %}
 
 {% block header_site_navigation_tabs %}
-  {{ super() }}
+ {{ h.build_nav_main(
+('search', _('Datasets')),
+('organizations_index', _('Organizations')),
+('blog_index', _('Blog')),
+('about', _('About'))
+) }}
   <li>
     <a href="http://www.data.com.pk/events/" title="{{ _('Events') }}">
       {{ _('Events') }}
