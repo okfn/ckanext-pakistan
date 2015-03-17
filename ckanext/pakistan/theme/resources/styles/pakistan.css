@@ -980,3 +980,7 @@ div.notes {
   position: relative;
   right: -16px;
 }
+.masthead .site-search input {
+  padding: 4px 10px;
+  width: 125px;
+}
