@@ -1,19 +1,14 @@
 {% ckan_extends %}
 
-{% block header_logo %}
-  {% if g.site_logo %}
-    <a class="logo" href="{{ h.url('home') }}"><img src="{{ h.url_for_static(g.site_logo) }}" alt="{{ g.site_title }} Logo" title="{{ g.site_title }} Logo" /></a>
-    {% else %}
-    <h1 class="logo"><a href="{{ h.url('home') }}">{{ g.site_title }}</a></h1>
-    {% if g.site_description %}<h2 class="tagline">{{ g.site_description }}</h2>{% endif %}
-  {% endif %}
+{% block header_wrapper %}
+{{ super() }}
 {% endblock %}
 
 {% block header_site_navigation_tabs %}
-  {{ h.build_nav_main(
-    ('search', _('Datasets')),
-    ('organizations_index', _('Organizations')),
-    ('blog_index', _('Blog')),
-    ('about', _('About'))
-  ) }}
+  {{ super() }}
+  <li>
+    <a href="http://www.data.com.pk/events/" title="{{ _('Events') }}">
+      {{ _('Events') }}
+    </a>
+  </li>
 {% endblock %}
