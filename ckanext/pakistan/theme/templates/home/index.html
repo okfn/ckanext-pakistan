@@ -1,5 +1,6 @@
 {% extends "page.html" %}
 {% set homepage_style = ( g.homepage_style or '1' ) %}
+{% set current_url = h.full_current_url() %}
 
 {% block subtitle %}{{ _("Welcome") }}{% endblock %}
 
@@ -73,8 +74,7 @@
         <div class="social social-header social-twitter">
           <a class="twitter-share-button" href="https://twitter.com/share"> Tweet </a>
         </div>
-        <div class="social social-header social-facebook">
-          <div id="fb-root"></div>
+        <div class="social social-facebook-header social-facebook">
           <div class="fb-share-button" data-href={{ current_url }} data-layout="button_count"></div>
         </div>
     </div>
