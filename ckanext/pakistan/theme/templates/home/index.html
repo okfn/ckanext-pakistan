@@ -67,22 +67,18 @@
           </nav>
         {% endif %}
       {% endblock %}
+        <div class="social social-header">
+          <div class="g-plusone" data-size="medium"></div>
+        </div>
+        <div class="social social-header social-twitter">
+          <a class="twitter-share-button" href="https://twitter.com/share"> Tweet </a>
+        </div>
+        <div class="social social-header social-facebook">
+          <div id="fb-root"></div>
+          <div class="fb-share-button" data-href={{ current_url }} data-layout="button_count"></div>
+        </div>
     </div>
   </header>
-<div class="container">
-  <div class="social-row">
-    <div class="social social-facebook">
-      <div id="fb-root"></div>
-      <div class="fb-share-button" data-href={{ current_url }} data-layout="button_count"></div>
-    </div>
-    <div class="social social-twitter">
-      <a class="twitter-share-button" href="https://twitter.com/share"> Tweet </a>
-    </div>
-    <div class="social">
-      <div class="g-plusone" data-size="medium"></div>
-    </div>
-  </div>
-</div>
 {% endblock %}
 <header class="masthead">
   {% block header_debug %}

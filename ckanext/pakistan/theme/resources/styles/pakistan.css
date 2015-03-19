@@ -984,3 +984,7 @@ div.notes {
   padding: 4px 10px;
   width: 125px;
 }
+.social-header {
+  float: right;
+  margin-top: 8px;
+}
