@@ -421,7 +421,7 @@ a.tag:hover {
 .masthead a {
   color: #000000;
   font-family: league_gothic, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -988,7 +988,6 @@ div.notes {
   float: right;
   margin-top: 8px;
 }
-
 .social-facebook-header {
   float: right;
   margin-top: 13px;
