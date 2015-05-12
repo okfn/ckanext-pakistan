@@ -1,20 +1,23 @@
 {% ckan_extends %}
 
 {% block header_site_navigation_tabs %}
- {{ h.build_nav_main(
-('search', _('Datasets')),
-('organizations_index', _('Organizations')),
-('blog_index', _('Blog')),
-('about', _('About')),
-) }}
+  {{ h.build_nav_main(
+  ('search', _('Datasets')),
+  ('organizations_index', _('Organizations')),
+  ('blog_index', _('Blog')),
+  ) }}
   <li>
-    <a href="http://www.data.com.pk/events/" title="{{ _('Events') }}">
-      {{ _('Events') }}
-    </a>
+  <a href="http://data.com.pk/edurankings/" title="{{ _('Rankings') }}">
+    {{ _('Rankings') }}
+  </a>
   </li>
   <li>
-    <a href="http://data.com.pk/edurankings/" title="{{ _('Ranking') }}">
-      {{ _('Ranking') }}
-    </a>
+  <a href="http://www.data.com.pk/events/" title="{{ _('Events') }}">
+    {{ _('Events') }}
+  </a>
   </li>
+  {{
+  {{ h.build_nav_main(
+  ('about', _('About')),
+  ) }}
 {% endblock %}
