@@ -5017,7 +5017,7 @@ a.tag:hover {
   *zoom: 1;
   margin: 0 -25px;
   padding-bottom: 15px;
-  background: #fbfbfb url("../../../base/images/bg.png");
+  background: #fbfbfb url("../../../../base/images/bg.png");
   border: 1px solid #dddddd;
   border-width: 1px 0;
 }
@@ -5163,7 +5163,7 @@ a.tag:hover {
   *zoom: 1;
   margin: 0 -25px;
   padding-bottom: 15px;
-  background: #fbfbfb url("../../../base/images/bg.png");
+  background: #fbfbfb url("../../../../base/images/bg.png");
   border: 1px solid #dddddd;
   border-width: 1px 0;
 }
@@ -5382,7 +5382,7 @@ a.tag:hover {
   right: -6px;
   width: 6px;
   height: 34px;
-  background-image: url("../../../base/images/nav-active.png?1");
+  background-image: url("../../../../base/images/nav-active.png?1");
 }
 .nav-item.active > a span,
 .nav-aside li.active a span {
@@ -5424,7 +5424,7 @@ a.tag:hover {
   top: 2px;
   width: 16px;
   height: 16px;
-  background-image: url("../../../base/images/sprite-ckan-icons.png");
+  background-image: url("../../../../base/images/sprite-ckan-icons.png");
   background-repeat: no-repeat;
   background-position: 16px 16px;
   content: "";
@@ -5499,7 +5499,7 @@ a.tag:hover {
   top: 2px;
   width: 16px;
   height: 16px;
-  background-image: url("../../../base/images/sprite-ckan-icons.png");
+  background-image: url("../../../../base/images/sprite-ckan-icons.png");
   background-repeat: no-repeat;
   background-position: 16px 16px;
   width: 17px;
@@ -6068,7 +6068,7 @@ textarea {
 }
 .resource-upload-field.loading {
   display: inline-block;
-  background: url("../../../base/images/loading-spinner.gif") no-repeat center right;
+  background: url("../../../../base/images/loading-spinner.gif") no-repeat center right;
   padding-right: 5px;
 }
 .select2-container .select2-choice input,
@@ -6898,7 +6898,7 @@ h4 small {
   top: 2px;
   width: 16px;
   height: 16px;
-  background-image: url("../../../base/images/sprite-ckan-icons.png");
+  background-image: url("../../../../base/images/sprite-ckan-icons.png");
   background-repeat: no-repeat;
   background-position: 16px 16px;
 }
@@ -7087,11 +7087,11 @@ h4 small {
   top: 2px;
   width: 16px;
   height: 16px;
-  background-image: url("../../../base/images/sprite-ckan-icons.png");
+  background-image: url("../../../../base/images/sprite-ckan-icons.png");
   background-repeat: no-repeat;
   background-position: 16px 16px;
   text-indent: -900em;
-  background: url("../../../base/images/sprite-resource-icons.png") no-repeat 0 0;
+  background: url("../../../../base/images/sprite-resource-icons.png") no-repeat 0 0;
 }
 .format-label {
   width: 32px;
@@ -7206,7 +7206,7 @@ h4 small {
   -moz-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
   position: relative;
-  background: #ffffff url("../../../base/images/nav.png") 0 0 repeat-y;
+  background: #ffffff url("../../../../base/images/nav.png") 0 0 repeat-y;
   margin-bottom: 20px;
 }
 .wrapper:before,
@@ -7226,7 +7226,7 @@ h4 small {
   position: relative;
   padding-top: 10px;
   padding-bottom: 20px;
-  background: #eeeeee url("../../../base/images/bg.png");
+  background: #eeeeee url("../../../../base/images/bg.png");
 }
 [role=main] {
   min-height: 350px;
@@ -7269,7 +7269,7 @@ h4 small {
   margin-bottom: 20px;
 }
 .hero {
-  background: url("../../../base/images/background-tile.png");
+  background: url("../../../../base/images/background-tile.png");
 }
 .hero:after {
   background-color: rgba(0, 0, 0, 0.09);
@@ -7512,7 +7512,7 @@ h4 small {
   *zoom: 1;
   min-height: 30px;
   color: #ffffff;
-  background: #003647 url("../../../base/images/bg.png");
+  background: #003647 url("../../../../base/images/bg.png");
 }
 .account-masthead:before,
 .account-masthead:after {
@@ -7596,7 +7596,7 @@ h4 small {
   *zoom: 1;
   min-height: 55px;
   color: #ffffff;
-  background: #005d7a url("../../../base/images/bg.png");
+  background: #005d7a url("../../../../base/images/bg.png");
 }
 .masthead:before,
 .masthead:after {
@@ -7672,7 +7672,7 @@ h4 small {
   *zoom: 1;
   min-height: 55px;
   color: #ffffff;
-  background: #005d7a url("../../../base/images/bg.png");
+  background: #005d7a url("../../../../base/images/bg.png");
   padding: 20px 0;
 }
 .site-footer:before,
@@ -7782,7 +7782,7 @@ h4 small {
   width: 68px;
   height: 21px;
   margin-top: 2px;
-  background: url("../../../base/images/ckan-logo-footer.png") no-repeat top left;
+  background: url("../../../../base/images/ckan-logo-footer.png") no-repeat top left;
   text-indent: -900em;
 }
 .lang-select {
@@ -7850,7 +7850,7 @@ h4 small {
 .js .table-toggle-more .toggle-seperator td {
   height: 11px;
   padding: 0;
-  background-image: url("../../../base/images/table-seperator.png");
+  background-image: url("../../../../base/images/table-seperator.png");
 }
 .js .table .toggle-show td {
   background: none;
@@ -7873,7 +7873,7 @@ h4 small {
   margin: 10px 0;
   padding: 0;
   list-style-type: none;
-  background: transparent url('../../../base/images/dotted.png') 14px 0 repeat-y;
+  background: transparent url('../../../../base/images/dotted.png') 14px 0 repeat-y;
 }
 .activity .item {
   position: relative;
@@ -8120,7 +8120,7 @@ h4 small {
   right: -10px;
   width: 10px;
   height: 21px;
-  background: transparent url("../../../base/images/dashboard-followee-related.png");
+  background: transparent url("../../../../base/images/dashboard-followee-related.png");
 }
 .popover-followee .popover-title {
   display: none;
@@ -8284,7 +8284,7 @@ h4 small {
   color: #009900;
 }
 body {
-  background: #005d7a url("../../../base/images/bg.png");
+  background: #005d7a url("../../../../base/images/bg.png");
 }
 [hidden] {
   display: none;
@@ -8545,7 +8545,7 @@ iframe {
 .ie7 .toolbar .breadcrumb li {
   padding-right: 10px;
   margin-right: 5px;
-  background: transparent url("../../../base/images/breadcrumb-slash-ie7.png") 100% 50% no-repeat;
+  background: transparent url("../../../../base/images/breadcrumb-slash-ie7.png") 100% 50% no-repeat;
 }
 .ie7 .toolbar .breadcrumb li.active {
   background-image: none;
