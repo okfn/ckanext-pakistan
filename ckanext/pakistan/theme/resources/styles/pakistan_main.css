@@ -7246,6 +7246,17 @@ h4 small {
   margin-left: 0;
   float: left;
 }
+.no-text .text {
+  display: none;
+}
+.js body.filters-modal {
+  overflow: hidden;
+}
+.show-filters.btn,
+.hide-filters {
+  display: none;
+}
+
 .primary > :last-child,
 .secondary > :last-child {
   margin-bottom: 0;
